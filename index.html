@@ -44,6 +44,12 @@
       margin-bottom: 40px;
       z-index: 900;
     }
+
+    #bottom_page {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
   </style>
 </head>
 
@@ -58,65 +64,46 @@
       <div class="mdl-layout--large-screen-only mdl-layout__header-row">
       </div>
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        <a href="#overview" class="mdl-layout__tab is-active">Início</a>
+        <a href="#" class="mdl-layout__tab is-active">Início</a>
         <a href="https://rafaelsantosbraz.github.io/ModeloDT.github.io/model_pt/index.html" target="_blank"
           class="mdl-layout__tab">Modelo</a>
-        <a href="#documentation" class="mdl-layout__tab">Documentação</a>
-        <a href="#about" class="mdl-layout__tab">Sobre</a>
+        <a href="https://drive.google.com/file/d/1C4T49hqRz_cZS73kazfMePQSU5kh_Ik4/view" target="_blank"
+          class="mdl-layout__tab">Documentação</a>
       </div>
     </header>
-    <main class="mdl-layout__content">
-      <div class="mdl-layout__tab-panel is-active" id="overview">
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          <header
-            class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-            <i class="material-icons">mode_comment</i>
-          </header>
-          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-            <div class="mdl-card__supporting-text">
-              <h4>Descrição Inicial</h4>
-              Uma representação visual e interativa completa de um modelo de processo de
-              software que visa contemplar todos os principais estágios de um Projeto de Sotfware, desde o contato
-              inicial da equipe com o cliente até a fase
-              de disponoibilização e manutenção do software. Para isso, utiliza-se uma combinação da metodologia Design
-              Thinking e do framework Scrum, visando centrar o processo nas pessoas envolvidas e manter a eficiência
-              e eficácia.
-            </div>
-            <div class="mdl-card__actions">
-              <a href="https://rafaelsantosbraz.github.io/ModeloDT.github.io/model_pt/index.html" target="_blank"
-                class="mdl-button">Visualizar Modelo</a>
-            </div>
+    <main class="demo-main mdl-layout__content">
+      <div class="demo-container mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div
+          class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+          <div class="demo-crumbs mdl-color-text--grey-500">
+            Modelo DT &gt; Início &gt; Descrição
           </div>
-        </section>
-        <br>
-        <br>
-      </div>
-      <div class="mdl-layout__tab-panel" id="documentation">
-        <section class="section--center mdl-grid mdl-grid--no-spacing">
-          <div class="mdl-cell mdl-cell--12-col">
-            <object data="https://drive.google.com/file/d/1C4T49hqRz_cZS73kazfMePQSU5kh_Ik4/view" width="100%"
-              height="800px">
-                  <embed src="https://drive.google.com/file/d/1C4T49hqRz_cZS73kazfMePQSU5kh_Ik4/view" />
-                      <p>Esse navegador não suporta visualização de PDF. Por favor, baixe o arquivo:<a
-                  href="https://drive.google.com/file/d/1C4T49hqRz_cZS73kazfMePQSU5kh_Ik4/view">Ver o PDF</a></p>
-                   </embed>
-            </object>
-          </div>
-        </section>
-      </div>
-      <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-          <div class="mdl-logo">DT e Scrum</div>
-          <ul class="mdl-mini-footer__link-list">
-            <li><a href="https://github.com/RafaelSantosBraz/ModeloDT.github.io">Github</a></li>
-            <li><a href="LICENSE.md" target="_blank">Termos & Privacidade</a></li>
-          </ul>
+          <h3>Processo de Sofware com Design Thinking e Scrum</h3>
+          <p>
+            Uma representação visual e interativa completa de um modelo de processo de software que visa contemplar
+            todos os principais estágios de um Projeto de Sotfware, desde o contato inicial da equipe com o cliente até
+            a fase de disponoibilização e manutenção do software. Para isso, utiliza-se uma combinação da metodologia
+            Design Thinking e do framework Scrum, visando centrar o processo nas pessoas envolvidas e manter a
+            eficiência e eficácia.
+          </p>
         </div>
-      </footer>
+      </div>
+      <br><br>
+      <div id="bottom_page">
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">DT e Scrum</div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="https://github.com/RafaelSantosBraz/ModeloDT.github.io">Github</a></li>
+              <li><a href="LICENSE.md" target="_blank">Termos & Privacidade</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
     </main>
   </div>
-  <a href="#" id="view-source"
-    class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+  <a id="view-source" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
     <i class="material-icons">language</i>
   </a>
   <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" for="view-source">
